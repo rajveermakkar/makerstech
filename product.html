@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="product.js" defer></script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <section class="hero" id="product">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Images will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="p-info">
+                    <h1 class="product-title">Product Name</h1>
+                    <p class="product-price">$0.00 <span class="text-muted"><del>$0.00</del></span></p>
+                    <p>4 interest-free payments of $0.00 with Klarna or Afterpay</p>
+                    
+                    <div class="my-4">
+                        <label>Color:</label>
+                        <div id="colorSelector" class="form-check">
+                            <!-- Colors will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    
+                    <div class="my-4">
+                        <label>Rating:</label>
+                        <div id="ratingSelector" class="d-flex mt-2">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star unchecked"></i>
+                        </div>
+                    </div>
+                    
+                    <p class="product-description mt-4">
+                        Product description will be inserted here.
+                    </p>
+                    <button class="btn btn-primary btn-lg mt-4 addtoCart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+
+    <section class="faq-section py-5" id="faq">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                What is Makers Tech?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Makers Tech</strong> is a cutting-edge platform dedicated to providing the latest and most innovative electronics and gadgets. Our mission is to inspire and empower tech enthusiasts, hobbyists, and professionals alike. We offer a wide range of products that cater to different interests and needs, from the latest smartphones and laptops to advanced wearable tech, smart home devices, and gaming accessories. At Makers Tech, we believe in the power of technology to transform lives and we strive to bring the best products to our customers, ensuring they stay ahead in the ever-evolving tech landscape.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How can I purchase products from Makers Tech?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  Purchasing products from Makers Tech is a straightforward and user-friendly process. Simply visit our online store and browse through the various categories to find the products you are interested in. Each product page provides detailed information, high-quality images, and customer reviews to help you make an informed decision. Once you have selected the items you wish to buy, add them to your cart. You can then proceed to checkout where you will be prompted to enter your shipping information and choose a payment method. After completing the payment, you will receive an order confirmation email and updates on the shipping status of your items.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What payment methods are accepted?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  Makers Tech accepts a variety of payment methods to ensure a convenient shopping experience for our customers. We accept major credit and debit cards including Visa, MasterCard, American Express, and Discover. Additionally, we support payments through PayPal, which offers a secure and swift transaction process. For those who prefer alternative payment methods, we also accept payments through Apple Pay and Google Pay. All transactions are encrypted and secure, providing you with peace of mind when shopping on our platform.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Do you offer warranties on your products?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Yes, we offer warranties on many of our products to ensure your peace of mind. The warranty period and coverage can vary depending on the product and manufacturer. Typically, our products come with a one-year warranty that covers manufacturing defects and malfunctions. If you encounter any issues with a product within the warranty period, please contact our customer service team with your order details and a description of the problem. We will assist you in troubleshooting the issue and, if necessary, provide a replacement or repair service. For more specific information about the warranty coverage on a particular product, please refer to the product page or contact our customer service team.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How can I contact Makers Tech customer service?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  We are committed to providing excellent customer service and are here to assist you with any questions or concerns. You can contact our customer service team via several channels. For immediate assistance, you can use the live chat feature on our website during business hours. Alternatively, you can email us at makertstech@lambtoncollege.ca or call our customer service hotline at 1-234-567-8900. Our customer service representatives are available Monday through Friday from 9 AM to 6 PM EST. We strive to respond to all inquiries promptly and ensure that your experience with Makers Tech is a positive one.
+                </div>
+              </div>
+            </div>
+            
+          <!-- Add more FAQ items as needed -->
+        </div>
+      </div>
+    </section>
+    
+    <div id="footer-placeholder"></div>
+</body>
+</html>
