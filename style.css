@@ -850,8 +850,16 @@ body{
 
 }
 
+@media(min-width:1200px){
+    #hero4{
+        height: auto;
+    }
+    .hero4cards{
+        width: 100%;;
+    }
+}
 
-media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .container {
         max-width: 1000px;
         padding: 15px;
