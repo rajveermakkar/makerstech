@@ -601,8 +601,7 @@ body{
     background-color: #f8f9fa;
 }
 
-/* For screens smaller than 768px (Tablets and mobile devices) */
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
 /* index page */
 #hero1 h1 {
     font-size: 3rem;
@@ -849,4 +848,75 @@ body{
 }
 
 
+}
+
+
+media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+        padding: 5px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
 }
