@@ -814,11 +814,8 @@ body{
 /* navbar */
 
 .navbar-collapse {
-    position: absolute;
-    top:56px;
-    left: 0;
-    right: 0;
-    background-color: white;
+    position: relative;
+    background-color: transparent;
 }
 
 .navbar-nav {
