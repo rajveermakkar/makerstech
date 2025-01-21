@@ -48,6 +48,7 @@ Welcome to **Makers Tech**, your one-stop eCommerce platform for the latest elec
 <img width="1440" alt="Screenshot 2025-01-21 at 12 09 14 PM" src="https://github.com/user-attachments/assets/8055672e-9e9e-4126-95b4-6d774e6672bb" />
 <img width="1440" alt="Screenshot 2025-01-21 at 12 09 22 PM" src="https://github.com/user-attachments/assets/0390fbed-6752-46bb-b66e-4fa8c50b6e7e" />
 
+---
 
 
 🌟 Show Your Support
